@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"optonix\startup_stm32f407xx.o"
+"optonix\sine.o"
+"optonix\main.o"
+"optonix\stm32f4xx_it.o"
+"optonix\stm32f4xx_hal_msp.o"
+"optonix\pwm_new.o"
+"optonix\stm32f4xx_hal_tim.o"
+"optonix\stm32f4xx_hal_tim_ex.o"
+"optonix\stm32f4xx_hal_rcc.o"
+"optonix\stm32f4xx_hal_rcc_ex.o"
+"optonix\stm32f4xx_hal_flash.o"
+"optonix\stm32f4xx_hal_flash_ex.o"
+"optonix\stm32f4xx_hal_flash_ramfunc.o"
+"optonix\stm32f4xx_hal_gpio.o"
+"optonix\stm32f4xx_hal_dma_ex.o"
+"optonix\stm32f4xx_hal_dma.o"
+"optonix\stm32f4xx_hal_pwr.o"
+"optonix\stm32f4xx_hal_pwr_ex.o"
+"optonix\stm32f4xx_hal_cortex.o"
+"optonix\stm32f4xx_hal.o"
+"optonix\stm32f4xx_hal_exti.o"
+"optonix\system_stm32f4xx.o"
+--strict --scatter "OptOnix\OptOnix.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OptOnix.map" -o OptOnix\OptOnix.axf
